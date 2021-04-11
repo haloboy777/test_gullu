@@ -1,0 +1,11 @@
+setup.py
+conf/__init__.py
+conf/database.py
+file_ingestor/__init__.py
+file_ingestor/db_connection.py
+file_ingestor/ingestor.py
+file_ingestor.egg-info/PKG-INFO
+file_ingestor.egg-info/SOURCES.txt
+file_ingestor.egg-info/dependency_links.txt
+file_ingestor.egg-info/requires.txt
+file_ingestor.egg-info/top_level.txt

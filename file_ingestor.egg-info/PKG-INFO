@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: file-ingestor
+Version: 0.0.1
+Summary: CSV Ingestor Package
+Home-page: UNKNOWN
+Author: Rishabh Gulati
+Author-email: risgulati@agmail.com
+License: UNKNOWN
+Description: Async ingestion of CSV file to a database
+Keywords: python,package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Assignment Evaluators
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
