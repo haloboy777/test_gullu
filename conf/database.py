@@ -1,7 +1,8 @@
+import os
 class Config(object):
     DATABASE_CONFIG = {
-    'host': 'localhost',
-    'db_name': 'user_rishabh',
-    'user': 'root',
-    'password': 'PassWord1.'    
+    'host': os.environ['host'],
+    'db_name': os.environ['db_name'],
+    'user': os.environ['user'],
+    'password': os.environ['password']   
     }

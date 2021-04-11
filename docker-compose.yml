@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  ingestor:
+    build: .
+    depends_on:
+      - db
+    environment:
+      - host=db
+      - password=password
+      - user=root
+      - db_name=test_db
+    restart: always
+  db:
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password

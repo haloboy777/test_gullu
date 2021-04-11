@@ -13,7 +13,7 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
-        install_requires=["asyncio","aiofiles","aiocsv","random","time","csv","datetime","pymysql"],
+        install_requires=["asyncio","aiofiles","aiocsv","random","time","csv","datetime","mysql-connector-python"],
         keywords=['python', 'package'],
         classifiers= [
             "Development Status :: 3 - Alpha",

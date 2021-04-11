@@ -1,4 +1,4 @@
-from file_ingestor import *
+from file_ingestor import Ingestor
 import sys,getopt
 import glob
 import os.path
@@ -27,6 +27,10 @@ def main(argv):
         except Exception as e:
             raise e
         try:
+            ingestor_obj.init_database()
+        except Exception as e:
+            raise e
+        try:
             ingestor_obj.ingest_file()
         except Exception as e:
             raise Exception("Ingetion failed with an error", str(e))
@@ -34,6 +38,6 @@ def main(argv):
             ingestor_obj.aggregate_data()
         except Exception as e:
             raise Exception("Aggregation failed with an error", str(e))
-    print("finished in : ", datetime.now()-start_time)
+    print("finished in : ", datetime.now()-start_time , " seconds")
 if __name__ == "__main__":
     main(sys.argv[1:])
